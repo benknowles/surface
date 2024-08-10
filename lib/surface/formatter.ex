@@ -425,5 +425,6 @@ defmodule Surface.Formatter do
   def render_contents_verbatim?("pre"), do: true
   def render_contents_verbatim?("code"), do: true
   def render_contents_verbatim?("script"), do: true
+  def render_contents_verbatim?("style"), do: true
   def render_contents_verbatim?(tag) when is_binary(tag), do: false
 end
